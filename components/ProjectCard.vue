@@ -28,7 +28,7 @@ defineProps({
 				:to="link"
 				class="select-none space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm hover:bg-base-300"
 			>
-				View Project <i class="fa-solid fa-arrow-right"></i>
+				Learn More <i class="fa-solid fa-arrow-right"></i>
 			</NuxtLink>
 			<NuxtLink
 				v-if="github"
