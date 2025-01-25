@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 	vite: {
 		plugins: [tailwindcss()],
 		build: {
-			minify: false
+			cssMinify: false
 		}
 	},
 	css: ["/assets/css/app.css"],
