@@ -19,12 +19,12 @@
 		</ContentDoc>
 	</section>
 </template>
-/
+
 <style>
 @reference "../../assets/css/app.css";
 .project-content {
 	@apply space-y-4;
 }
 </style>
-/
+
 <script setup lang="ts"></script>
