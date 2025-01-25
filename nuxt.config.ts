@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+	modules: ["@nuxt/content"],
+	vite: {
+		plugins: [tailwindcss()]
+	},
+	css: ["/assets/css/app.css"],
 	runtimeConfig: {
 		public: {
 			turnstileKey: ""
@@ -18,10 +23,10 @@ export default defineNuxtConfig({
 	// 	'/':{prerender:true}
 	// },
 	app: {
-		// pageTransition: {
-		// 	name: "page",
-		// 	mode: "out-in"
-		// },
+		pageTransition: {
+			name: "page",
+			mode: "out-in"
+		},
 		head: {
 			link: [{ rel: "icon", href: "/favicon.webp" }],
 			htmlAttrs: {
