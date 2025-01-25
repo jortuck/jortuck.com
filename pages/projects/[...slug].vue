@@ -11,7 +11,7 @@
 					<h1 class="text-center text-3xl font-bold text-white md:text-5xl">Project Not Found</h1>
 					<NuxtLink
 						to="/projects"
-						class="block w-fit rounded-md bg-base-200 p-3 text-white hover:bg-base-300"
+						class="bg-base-200 hover:bg-base-300 block w-fit rounded-md p-3 text-white"
 						><i class="fa-solid fa-arrow-left"></i> Back To Projects</NuxtLink
 					>
 				</div>
@@ -20,7 +20,8 @@
 	</section>
 </template>
 /
-<style lang="postcss">
+<style>
+@reference "../../assets/css/app.css";
 .project-content {
 	@apply space-y-4;
 }
