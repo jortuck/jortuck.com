@@ -5,7 +5,7 @@
 			class="block rounded-md text-white hover:underline md:text-lg"
 			><i class="fa-solid fa-arrow-left"></i> Back To Projects</NuxtLink
 		>
-		<ContentDoc class="project-content">
+		<ContentDoc class="space-y-4">
 			<template v-slot:not-found>
 				<div class="flex w-full flex-col items-center space-y-10 pt-10">
 					<h1 class="text-center text-3xl font-bold text-white md:text-5xl">Project Not Found</h1>
@@ -19,12 +19,4 @@
 		</ContentDoc>
 	</section>
 </template>
-
-<style>
-@reference "../../assets/css/app.css";
-.project-content {
-	@apply space-y-4;
-}
-</style>
-
 <script setup lang="ts"></script>
