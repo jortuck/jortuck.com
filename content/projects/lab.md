@@ -2,7 +2,7 @@
 title: 'My Home Lab'
 description: 'A growing home lab that includes a Proxmox server, OPNsense firewall, and custom networking equipment.'
 image:
-  src: 'https://jortuck.com/thumbnail/server.jpg'
+  src: 'https://jortuck.com/thumbnails/server.jpg'
   type: 'image/jpg'
 ---
 

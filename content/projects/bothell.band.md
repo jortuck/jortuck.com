@@ -3,7 +3,7 @@ title: 'bothell.band'
 description: 'A website created as a central hub to streamline and organize fundraising events for my high school jazz band.'
 github: 'bothell.band'
 image:
-  src: 'https://jortuck.com/thumbnail/bothell.band.png'
+  src: 'https://jortuck.com/thumbnails/bothell.band.png'
   type: 'image/png'
 ---
 

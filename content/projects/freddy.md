@@ -3,7 +3,7 @@ title: "Freddy Bot"
 description: "A free and open-source music bot built with Java for streaming music into your discord calls."
 github: "freddy"
 image:
-  src: "https://jortuck.com/thumbnail/freddy.png"
+  src: "https://jortuck.com/thumbnails/freddy.png"
   type: "image/png"
 ---
 

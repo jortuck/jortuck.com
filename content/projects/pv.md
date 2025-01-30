@@ -3,7 +3,7 @@ title: 'Paleoclimate Visualizer'
 description: 'An open-source web app for visualizing climate data reconstructions, built during my time as an Undergraduate Research Assistant for the University of Washington School of Oceanography.'
 github: 'PaleoclimateVisualizer'
 image:
-  src: 'https://jortuck.com/thumbnail/pv.png'
+  src: 'https://jortuck.com/thumbnails/pv.png'
   type: 'image/png'
 ---
 
