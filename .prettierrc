@@ -1,4 +1,5 @@
 {
+  "tailwindStylesheet": "./assets/css/app.css",
   "useTabs": true,
   "singleQuote": false,
   "trailingComma": "none",
