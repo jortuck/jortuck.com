@@ -4,14 +4,22 @@
 @import "@fortawesome/fontawesome-free/css/brands.min.css";
 @import "tailwindcss";
 
-@config "../../tailwind.config.js";
-
 @font-face {
     font-family: Inter;
 }
 body {
     font-family: Inter, sans-serif;
 }
+@theme {
+    --color-primary: #62a1ec;
+    --color-base-100: #111111;
+    --color-base-150: #181818;
+    --color-base-200: #2B323B;
+    --color-base-300: #444C56;
+    --color-husky: #4b2e83;
+    --color-husky2: #32006e;
+}
+
 html{
     @apply bg-base-100
 }
