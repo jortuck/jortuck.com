@@ -21,9 +21,12 @@ export default defineNuxtConfig({
 		mailDestination: "",
 		discordWebhook: ""
 	},
-	routeRules: {
-		"/*": { prerender: true },
-		"/api/contact": { prerender: false }
+	nitro: {
+		prerender: {
+			crawlLinks: true,
+			routes: ["/*"],
+			ignore: ["/api/contact"]
+		}
 	},
 	app: {
 		head: {
