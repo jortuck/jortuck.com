@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 			cssMinify: false
 		}
 	},
+
 	css: ["/assets/css/app.css"],
 	runtimeConfig: {
 		public: {
@@ -20,11 +21,10 @@ export default defineNuxtConfig({
 		mailDestination: "",
 		discordWebhook: ""
 	},
-	// routeRules:{
-	// 	'/projects/*':{prerender:true},
-	// 	'/projects':{prerender:true},
-	// 	'/':{prerender:true}
-	// },
+	routeRules: {
+		"/projects/*": { prerender: true },
+		"/": { prerender: true }
+	},
 	app: {
 		head: {
 			link: [{ rel: "icon", href: "/favicon.webp" }],
