@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 		}
 	},
 	routeRules: {
-		"/**": { prerender: true },
+		"/*": { prerender: true },
 		"/api/contact": { prerender: false }
 	},
 	app: {
