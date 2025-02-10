@@ -24,9 +24,12 @@ export default defineNuxtConfig({
 	nitro: {
 		prerender: {
 			crawlLinks: true,
-			routes: ["/*"],
-			ignore: ["/api/contact"]
+			failOnError: false
 		}
+	},
+	routeRules: {
+		"/**": { prerender: true },
+		"/api/contact": { prerender: false }
 	},
 	app: {
 		head: {
