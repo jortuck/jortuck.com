@@ -21,10 +21,6 @@ export default defineNuxtConfig({
 		mailDestination: "",
 		discordWebhook: ""
 	},
-	routeRules: {
-		"/projects/*": { prerender: true },
-		"/": { prerender: true }
-	},
 	app: {
 		head: {
 			link: [{ rel: "icon", href: "/favicon.webp" }],
