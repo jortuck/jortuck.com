@@ -184,9 +184,14 @@ async function handleSubmit() {
 						external
 						target="_blank"
 					>
-						https://pv.jortuck.com
-					</NuxtLink>
-					.
+						https://pv.jortuck.com</NuxtLink
+					>. Currently, I am serving as a Teaching Assistant for
+					<NuxtLink
+						target="_blank"
+						class="text-primary hover:underline"
+						to="https://www.washington.edu/students/crscat/info.html#info201"
+						>INFO 201: Foundational Skills for Data Science</NuxtLink
+					>, helping students begin their data science journeys.
 				</ProseP>
 			</div>
 			<div class="space-y-6">
