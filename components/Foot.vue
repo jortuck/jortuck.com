@@ -37,7 +37,7 @@
 				<p class="text-center text-3xl font-extrabold text-white lg:text-right">
 					<span class="text-primary">J</span>T
 				</p>
-				<p class="text-xs text-gray-400">© 2025 Jordan Tucker</p>
+				<p class="text-xs text-gray-400">&copy; 2025 Jordan Tucker</p>
 			</div>
 		</div>
 	</footer>
