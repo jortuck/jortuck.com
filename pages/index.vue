@@ -271,13 +271,14 @@ async function handleSubmit() {
 							<h4 class="text-lg font-bold md:text-xl">
 								Bachelor of Science - Informatics & Applied Mathematics, Expected June 2027
 							</h4>
-							<ul class="list-inside list-disc">
-								<li>Member of the Husky Marching Band.</li>
-								<li>
+							<ProseUl>
+								<ProseLi>Member of the Husky Marching Band.</ProseLi>
+								<ProseLi>Member of Husky Robotics.</ProseLi>
+								<ProseLi>
 									Deans List Recipient: Autumn 2023, Winter 2024, Spring 2024, Autumn 2024, Winter
 									2025.
-								</li>
-							</ul>
+								</ProseLi>
+							</ProseUl>
 						</div>
 					</div>
 				</div>
@@ -336,7 +337,7 @@ async function handleSubmit() {
 						</Transition>
 						<div class="flex w-full flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-4">
 							<label
-								>Name*
+								>Name (required)
 								<input
 									v-model="contactForm.name"
 									name="name"
@@ -354,7 +355,7 @@ async function handleSubmit() {
 								<span class="error">{{ errors["name"] }}</span>
 							</label>
 							<label
-								>Email*
+								>Email (required)
 								<input
 									v-model="contactForm.email"
 									name="email"
@@ -396,7 +397,7 @@ async function handleSubmit() {
 								<span class="error">{{ errors["subject"] }}</span>
 							</label>
 							<label
-								>Message*
+								>Message (required)
 								<textarea
 									v-model="contactForm.message"
 									name="message"
