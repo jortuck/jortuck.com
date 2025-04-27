@@ -199,7 +199,7 @@ async function handleSubmit() {
 				</ProseP>
 			</div>
 			<div class="space-y-6">
-				<ProseH2>Featured Projects</ProseH2>
+				<ProseH2>Projects</ProseH2>
 				<div class="my-3 grid grid-cols-1 gap-3 md:grid-cols-2">
 					<ProjectCard
 						v-for="item in data"

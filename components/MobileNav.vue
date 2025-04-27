@@ -51,15 +51,6 @@ let menuBarOpen = ref(false);
 			</li>
 			<li>
 				<NuxtLink
-					to="/projects"
-					@click="menuBarOpen = false"
-					activeClass="!text-white"
-				>
-					Projects
-				</NuxtLink>
-			</li>
-			<li>
-				<NuxtLink
 					@click="menuBarOpen = false"
 					href="/#contact"
 				>
@@ -75,6 +66,6 @@ li > a {
 	@apply text-xl text-gray-400 transition-colors duration-200 ease-in-out hover:text-white;
 }
 .nav-bg {
-	@apply bg-base-100/80 border-b-base-300 border-b-2 backdrop-blur-2xl;
+	@apply border-b-2 border-b-base-300 bg-base-100/80 backdrop-blur-2xl;
 }
 </style>

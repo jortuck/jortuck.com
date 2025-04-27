@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 <template>
 	<nav
-		class="border-b-base-300 bg-base-100 hidden border-b-2 py-4 transition-colors duration-200 ease-in-out lg:flex lg:border-0"
+		class="hidden border-b-2 border-b-base-300 bg-base-100 py-4 transition-colors duration-200 ease-in-out lg:flex lg:border-0"
 		:class="{ scrolled: scroll > 0 }"
 	>
 		<div
@@ -31,13 +31,7 @@ onMounted(() => {
 				>
 					Home
 				</NuxtLink>
-				<NuxtLink
-					href="/projects"
-					activeClass="!text-white"
-				>
-					Projects
-				</NuxtLink>
-				<NuxtLink href="/#contact"> Contact </NuxtLink>
+				<NuxtLink href="/#contact">Contact</NuxtLink>
 			</div>
 		</div>
 	</nav>
@@ -45,7 +39,7 @@ onMounted(() => {
 <style scoped>
 @reference "~/assets/css/app.css";
 .scrolled {
-	@apply bg-base-100/80 border-b-2 backdrop-blur-2xl;
+	@apply border-b-2 bg-base-100/80 backdrop-blur-2xl;
 }
 div.links > a {
 	@apply text-xl font-medium text-gray-400 transition-colors duration-200 ease-in-out hover:text-white;
