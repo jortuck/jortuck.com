@@ -9,9 +9,9 @@ useSeoMeta({
 	title: "Home | Jordan Tucker",
 	ogTitle: "Home | Jordan Tucker",
 	description:
-		"Hello, my name is Jordan. I'm a student studying Informatics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
+		"Hello, my name is Jordan. I'm a student completing a double degree in Informatics and Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
 	ogDescription:
-		"Hello , my name is Jordan. I'm a student studying Informatics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
+		"Hello , my name is Jordan. I'm a student completing a double degree in Informatics and Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
 	ogUrl: "https://jortuck.com"
 });
 let { data } = await useAsyncData("featuredProjects", () => queryContent("/projects").find());
@@ -146,7 +146,7 @@ async function handleSubmit() {
 			<div class="space-y-8">
 				<ProseH2>About</ProseH2>
 				<ProseP>
-					My name is Jordan, I'm a student completeing a double degree in
+					My name is Jordan, I'm a student completing a double degree in
 					<NuxtLink
 						class="text-primary hover:underline"
 						external
