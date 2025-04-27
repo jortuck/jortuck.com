@@ -14,11 +14,7 @@ useSeoMeta({
 		"Hello , my name is Jordan. I'm a student studying Informatics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
 	ogUrl: "https://jortuck.com"
 });
-let { data } = await useAsyncData("featuredProjects", () =>
-	queryContent("/projects")
-		.where({ title: { $in: ["Paleoclimate Visualizer", "Freddy Bot"] } })
-		.find()
-);
+let { data } = await useAsyncData("featuredProjects", () => queryContent("/projects").find());
 let contactForm = ref({
 	name: "",
 	email: "",
@@ -124,7 +120,7 @@ async function handleSubmit() {
 					Hi, I'm Jordan.
 				</h1>
 				<h2 class="text-4xl font-semibold tracking-tighter select-none sm:h-auto xl:text-6xl">
-					I'm an Informatics student at the University of Washington.
+					I'm a student at the University of Washington.
 				</h2>
 				<div class="space-x-6 text-5xl">
 					<a
@@ -150,14 +146,22 @@ async function handleSubmit() {
 			<div class="space-y-8">
 				<ProseH2>About</ProseH2>
 				<ProseP>
-					My name is Jordan, I'm a student studying
+					My name is Jordan, I'm a student completeing a double degree in
 					<NuxtLink
 						class="text-primary hover:underline"
 						external
 						target="_blank"
 						to="https://ischool.uw.edu/programs/informatics"
-						>Informatics
-					</NuxtLink>
+						>Informatics</NuxtLink
+					>
+					and
+					<NuxtLink
+						class="text-primary hover:underline"
+						external
+						target="_blank"
+						to="https://amath.washington.edu/undergraduate-major-applied-mathematics"
+						>Applied Mathematics</NuxtLink
+					>
 					at the
 					<NuxtLink
 						to="https://washington.edu"
@@ -195,8 +199,22 @@ async function handleSubmit() {
 				</ProseP>
 			</div>
 			<div class="space-y-6">
-				<ProseH2> Experience </ProseH2>
-				<ProseH3>Work</ProseH3>
+				<ProseH2>Featured Projects</ProseH2>
+				<div class="my-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+					<ProjectCard
+						v-for="item in data"
+						:title="item.title"
+						:description="item.description"
+						:github="item.github"
+						:link="item._path"
+					/>
+				</div>
+				<NuxtLink
+					to="/projects"
+					class="block w-fit rounded-md bg-base-200 p-3 text-white hover:bg-base-300"
+					>View All Projects <i class="fa-solid fa-arrow-right"></i
+				></NuxtLink>
+				<ProseH2>Work</ProseH2>
 				<div class="my-3 grid grid-cols-1 gap-3">
 					<ContentList
 						path="/work"
@@ -243,7 +261,7 @@ async function handleSubmit() {
 						</div>
 					</ContentList>
 				</div>
-				<ProseH3>Education</ProseH3>
+				<ProseH2>Education</ProseH2>
 				<div class="flex flex-col md:flex-row">
 					<div
 						class="flex items-center justify-center rounded-t-md bg-gradient-to-br from-husky to-husky2 py-10 align-middle md:w-2/3 md:rounded-l-md md:rounded-tr-none"
@@ -251,7 +269,7 @@ async function handleSubmit() {
 						<img
 							class="block w-fit px-12 py-6"
 							alt="University of Washington."
-							src="~/assets/images/ischool.png"
+							src="~/assets/images/uwlogo.png"
 						/>
 					</div>
 					<div
@@ -259,38 +277,21 @@ async function handleSubmit() {
 					>
 						<div class="m-3 space-y-2 text-gray-50">
 							<h4 class="text-lg font-bold md:text-xl">
-								Bachelor of Science - Informatics, Expected June 2027
+								Bachelor of Science - Informatics & Applied Mathematics, Expected June 2027
 							</h4>
 							<ul class="list-inside list-disc">
-								<li>Minor in Mathematics.</li>
 								<li>Member of the Husky Marching Band.</li>
-								<li>Deans List Recipient: Autumn 2023, Winter 2024, Spring 2024, Autumn 2024.</li>
+								<li>
+									Deans List Recipient: Autumn 2023, Winter 2024, Spring 2024, Autumn 2024, Winter
+									2025.
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<ProseH3>Featured Projects</ProseH3>
-				<!--				<ProseP-->
-				<!--					>Over time, I have developed my skills many areas of computing including web development,-->
-				<!--					server side applications, data science applications, and cloud/computing infrastructure.-->
-				<!--				</ProseP>-->
-				<div class="my-3 grid grid-cols-1 gap-3 md:grid-cols-2">
-					<ProjectCard
-						v-for="item in data"
-						:title="item.title"
-						:description="item.description"
-						:github="item.github"
-						:link="item._path"
-					/>
-				</div>
-				<NuxtLink
-					to="/projects"
-					class="block w-fit rounded-md bg-base-200 p-3 text-white hover:bg-base-300"
-					>View All Projects <i class="fa-solid fa-arrow-right"></i
-				></NuxtLink>
 			</div>
 			<div class="space-y-4">
-				<ProseH2 id="contact"> Contact </ProseH2>
+				<ProseH2 id="contact">Contact</ProseH2>
 				<ProseP>
 					Fill out this form to send a message directly to my inbox! No matter what you have to say,
 					I would love to hear from you! You can also reach me on LinkedIn if that's your preferred
