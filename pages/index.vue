@@ -209,11 +209,6 @@ async function handleSubmit() {
 						:link="item._path"
 					/>
 				</div>
-				<NuxtLink
-					to="/projects"
-					class="block w-fit rounded-md bg-base-200 p-3 text-white hover:bg-base-300"
-					>View All Projects <i class="fa-solid fa-arrow-right"></i
-				></NuxtLink>
 				<ProseH2>Work</ProseH2>
 				<div class="my-3 grid grid-cols-1 gap-3">
 					<ContentList
@@ -235,12 +230,9 @@ async function handleSubmit() {
 								</div>
 								<div>
 									<p v-if="item.description">{{ item.description }}</p>
-									<ul
-										v-if="item.bullets"
-										class="list-inside list-disc"
-									>
-										<li v-for="bullet in item.bullets">{{ bullet }}</li>
-									</ul>
+									<ProseUl v-if="item.bullets">
+										<ProseLi v-for="bullet in item.bullets">{{ bullet }}</ProseLi>
+									</ProseUl>
 								</div>
 							</div>
 							<div class="flex flex-wrap gap-2 text-gray-50">
