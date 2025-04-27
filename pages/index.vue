@@ -198,9 +198,9 @@ async function handleSubmit() {
 					>, helping students begin their data science journeys.
 				</ProseP>
 			</div>
-			<div class="space-y-6">
+			<div class="space-y-8">
 				<ProseH2>Projects</ProseH2>
-				<div class="my-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+				<div class="grid grid-cols-1 gap-3 md:grid-cols-2">
 					<ProjectCard
 						v-for="item in data"
 						:title="item.title"
@@ -210,7 +210,7 @@ async function handleSubmit() {
 					/>
 				</div>
 				<ProseH2>Work</ProseH2>
-				<div class="my-3 grid grid-cols-1 gap-3">
+				<div class="grid grid-cols-1 gap-3">
 					<ContentList
 						path="/work"
 						slot="item"
