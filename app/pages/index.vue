@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import Shield from "~/components/Shield.vue";
 import { ZodError, type ZodErrorMap, type ZodIssue, ZodSchema } from "zod";
-import { schema } from "~/shared/ContactFormScheme";
+import { schema } from "#shared/ContactFormScheme";
 import { $fetch, FetchError } from "ofetch";
 
 const config = useRuntimeConfig();
@@ -115,12 +114,12 @@ async function handleSubmit() {
 	<div class="space-y-20">
 		<section class="mt-20 w-full text-center md:mt-28 md:space-y-6 lg:mt-40 lg:text-left">
 			<div
-				class="h-full space-y-9 bg-gradient-to-br from-white via-primary to-white to-70% bg-clip-text tracking-tighter text-transparent lg:space-y-6 lg:pr-10"
+				class="via-primary h-full space-y-9 bg-gradient-to-br from-white to-white to-70% bg-clip-text tracking-tighter text-transparent lg:space-y-6 lg:pr-10"
 			>
-				<h1 class="text-5xl font-semibold tracking-tighter select-none lg:text-7xl xl:text-8xl">
+				<h1 class="select-none text-5xl font-semibold tracking-tighter lg:text-7xl xl:text-8xl">
 					Hi, I'm Jordan.
 				</h1>
-				<h2 class="text-4xl font-semibold tracking-tighter select-none sm:h-auto xl:text-6xl">
+				<h2 class="select-none text-4xl font-semibold tracking-tighter sm:h-auto xl:text-6xl">
 					I'm a student at the University of Washington.
 				</h2>
 				<div class="space-x-6 text-5xl">
@@ -214,7 +213,7 @@ async function handleSubmit() {
 				<div class="grid grid-cols-1 gap-3">
 					<div
 						v-for="item in work"
-						class="flex flex-col space-y-4 rounded-md border-2 border-base-200 bg-gradient-to-br from-base-150 to-base-100 p-3"
+						class="border-base-200 from-base-150 to-base-100 flex flex-col space-y-4 rounded-md border-2 bg-gradient-to-br p-3"
 					>
 						<div class="flex-1 space-y-2 text-gray-50">
 							<div>
@@ -234,13 +233,13 @@ async function handleSubmit() {
 							<NuxtLink
 								v-for="link in item.links"
 								:to="link.href"
-								class="block w-fit space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm select-none hover:bg-base-300"
+								class="bg-base-200 hover:bg-base-300 block w-fit select-none space-x-2.5 rounded-md px-2 py-1 text-sm"
 							>
 								{{ link.text }} <i class="fa-solid fa-arrow-right"></i>
 							</NuxtLink>
 							<span
 								v-for="skill in item.skills"
-								class="block w-fit space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm select-none"
+								class="bg-base-200 block w-fit select-none space-x-2.5 rounded-md px-2 py-1 text-sm"
 							>
 								{{ skill }}
 							</span>
@@ -251,7 +250,7 @@ async function handleSubmit() {
 				<ProseH2>Education</ProseH2>
 				<div class="flex flex-col md:flex-row">
 					<div
-						class="flex items-center justify-center rounded-t-md bg-gradient-to-br from-husky to-husky2 py-10 align-middle md:w-2/3 md:rounded-l-md md:rounded-tr-none"
+						class="from-husky to-husky2 flex items-center justify-center rounded-t-md bg-gradient-to-br py-10 align-middle md:w-2/3 md:rounded-l-md md:rounded-tr-none"
 					>
 						<img
 							class="block w-fit px-12 py-6"
@@ -260,7 +259,7 @@ async function handleSubmit() {
 						/>
 					</div>
 					<div
-						class="w-full rounded-b-md border-r-2 border-b-2 border-l-2 border-base-200 bg-gradient-to-br from-base-150 to-base-100 md:rounded-r-md md:rounded-b-none md:border-t-2 md:border-l-0"
+						class="border-base-200 from-base-150 to-base-100 w-full rounded-b-md border-b-2 border-l-2 border-r-2 bg-gradient-to-br md:rounded-b-none md:rounded-r-md md:border-l-0 md:border-t-2"
 					>
 						<div class="m-3 space-y-2 text-gray-50">
 							<h4 class="text-lg font-bold md:text-xl">
@@ -303,7 +302,7 @@ async function handleSubmit() {
 						<Transition>
 							<div
 								v-if="formSuccess"
-								class="bg-opacity-75 absolute flex h-full w-full flex-col items-center justify-center space-y-10 rounded-md border-2 border-base-300 bg-base-100 text-center font-bold backdrop-blur-2xl"
+								class="border-base-300 bg-base-100 absolute flex h-full w-full flex-col items-center justify-center space-y-10 rounded-md border-2 bg-opacity-75 text-center font-bold backdrop-blur-2xl"
 							>
 								<h1 class="text-5xl text-green-500">Success!</h1>
 								<ProseP class="m-4"
@@ -324,13 +323,13 @@ async function handleSubmit() {
 										}
 									"
 									type="reset"
-									class="rounded-md bg-base-200 p-3 text-white transition-colors duration-200 hover:bg-base-300"
+									class="bg-base-200 hover:bg-base-300 rounded-md p-3 text-white transition-colors duration-200"
 								>
 									Submit Another Response
 								</button>
 							</div>
 						</Transition>
-						<div class="flex w-full flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-4">
+						<div class="flex w-full flex-col space-y-5 md:flex-row md:space-x-4 md:space-y-0">
 							<label
 								>Name (required)
 								<input
@@ -415,9 +414,12 @@ async function handleSubmit() {
 							</label>
 						</div>
 						<div
-							class="flex flex-col content-center items-center space-y-3 md:flex-row md:space-y-0 md:space-x-3"
+							class="flex flex-col content-center items-center space-y-3 md:flex-row md:space-x-3 md:space-y-0"
 						>
-							<div class="cf-turnstile"></div>
+							<div
+								class="cf-turnstile"
+								data-theme="dark"
+							></div>
 							<span class="error font-bold">{{ errors["cftoken"] }}</span>
 						</div>
 						<button
@@ -451,8 +453,8 @@ async function handleSubmit() {
 }
 
 input {
-	@apply bg-base-200 text-white focus:border-primary focus:bg-base-300 active:bg-base-300;
-	@apply mt-1 block w-full rounded-md border-2 border-transparent p-2 font-normal transition-colors duration-200 ease-in-out focus:outline-hidden;
+	@apply bg-base-200 focus:border-primary focus:bg-base-300 active:bg-base-300 text-white;
+	@apply focus:outline-hidden mt-1 block w-full rounded-md border-2 border-transparent p-2 font-normal transition-colors duration-200 ease-in-out;
 }
 
 label {
@@ -473,17 +475,17 @@ span.error {
 }
 
 .submit-btn {
-	@apply text-white hover:bg-primary disabled:hover:bg-base-200;
-	@apply block rounded-md bg-base-200 p-3 transition-colors duration-200 ease-in-out disabled:hover:cursor-not-allowed;
+	@apply hover:bg-primary disabled:hover:bg-base-200 text-white;
+	@apply bg-base-200 block rounded-md p-3 transition-colors duration-200 ease-in-out disabled:hover:cursor-not-allowed;
 }
 
 textarea {
-	@apply bg-base-200 text-white focus:border-primary focus:bg-base-300 active:bg-base-300;
-	@apply mt-1 block w-full rounded-md border-2 border-transparent p-2 font-normal transition-colors duration-200 ease-in-out focus:outline-hidden;
+	@apply bg-base-200 focus:border-primary focus:bg-base-300 active:bg-base-300 text-white;
+	@apply focus:outline-hidden mt-1 block w-full rounded-md border-2 border-transparent p-2 font-normal transition-colors duration-200 ease-in-out;
 }
 
 .small-heading {
-	@apply bg-gradient-to-br from-white via-primary to-white bg-clip-text text-2xl font-bold text-transparent md:text-3xl;
+	@apply via-primary bg-gradient-to-br from-white to-white bg-clip-text text-2xl font-bold text-transparent md:text-3xl;
 }
 
 .section-paragraph {
