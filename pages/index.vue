@@ -14,7 +14,8 @@ useSeoMeta({
 		"Hello , my name is Jordan. I'm a student completing a double degree in Informatics and Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
 	ogUrl: "https://jortuck.com"
 });
-let { data } = await useAsyncData("featuredProjects", () => queryContent("/projects").find());
+let { data } = await useAsyncData("featuredProjects", () => queryCollection("projects").all());
+let { data: work } = await useAsyncData("work", () => queryCollection("work").all());
 let contactForm = ref({
 	name: "",
 	email: "",
@@ -206,52 +207,46 @@ async function handleSubmit() {
 						:title="item.title"
 						:description="item.description"
 						:github="item.github"
-						:link="item._path"
+						:link="item.path"
 					/>
 				</div>
 				<ProseH2>Work</ProseH2>
 				<div class="grid grid-cols-1 gap-3">
-					<ContentList
-						path="/work"
-						slot="item"
-						v-slot="{ list }"
+					<div
+						v-for="item in work"
+						class="flex flex-col space-y-4 rounded-md border-2 border-base-200 bg-gradient-to-br from-base-150 to-base-100 p-3"
 					>
-						<div
-							v-for="item in list"
-							class="flex flex-col space-y-4 rounded-md border-2 border-base-200 bg-gradient-to-br from-base-150 to-base-100 p-3"
-						>
-							<div class="flex-1 space-y-2 text-gray-50">
-								<div>
-									<h4 class="text-lg font-bold md:text-xl">
-										{{ item.title }}
-									</h4>
-									<h5>{{ item.date }}</h5>
-									<h5 class="italic">{{ item.company }}, {{ item.location }}</h5>
-								</div>
-								<div>
-									<p v-if="item.description">{{ item.description }}</p>
-									<ProseUl v-if="item.bullets">
-										<ProseLi v-for="bullet in item.bullets">{{ bullet }}</ProseLi>
-									</ProseUl>
-								</div>
+						<div class="flex-1 space-y-2 text-gray-50">
+							<div>
+								<h4 class="text-lg font-bold md:text-xl">
+									{{ item.title }}
+								</h4>
+								<h5>{{ item.date }}</h5>
+								<h5 class="italic">{{ item.company }}, {{ item.location }}</h5>
 							</div>
-							<div class="flex flex-wrap gap-2 text-gray-50">
-								<NuxtLink
-									v-for="link in item.links"
-									:to="link.href"
-									class="block w-fit space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm select-none hover:bg-base-300"
-								>
-									{{ link.text }} <i class="fa-solid fa-arrow-right"></i>
-								</NuxtLink>
-								<span
-									v-for="skill in item.skills"
-									class="block w-fit space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm select-none"
-								>
-									{{ skill }}
-								</span>
+							<div>
+								<ProseUl v-if="item.bullets">
+									<ProseLi v-for="bullet in item.bullets">{{ bullet }}</ProseLi>
+								</ProseUl>
 							</div>
 						</div>
-					</ContentList>
+						<div class="flex flex-wrap gap-2 text-gray-50">
+							<NuxtLink
+								v-for="link in item.links"
+								:to="link.href"
+								class="block w-fit space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm select-none hover:bg-base-300"
+							>
+								{{ link.text }} <i class="fa-solid fa-arrow-right"></i>
+							</NuxtLink>
+							<span
+								v-for="skill in item.skills"
+								class="block w-fit space-x-2.5 rounded-md bg-base-200 px-2 py-1 text-sm select-none"
+							>
+								{{ skill }}
+							</span>
+						</div>
+					</div>
+					<
 				</div>
 				<ProseH2>Education</ProseH2>
 				<div class="flex flex-col md:flex-row">

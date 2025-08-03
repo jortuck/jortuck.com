@@ -1,5 +1,5 @@
 <template>
-	<div class="md:space-x-2.5 md:flex-row space-y-3 md:space-y-0 flex flex-col">
-		<ContentSlot :use="$slots.default" unwrap="p" />
+	<div class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-2.5">
+		<slot mdc-unwrap="p" />
 	</div>
 </template>
