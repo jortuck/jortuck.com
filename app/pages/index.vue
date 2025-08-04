@@ -170,32 +170,7 @@ async function handleSubmit() {
 						>University of Washington.
 					</NuxtLink>
 					I have been teaching myself to program since 2019, and have focused my efforts in web
-					development, server-side applications, and data science applications. My most recent
-					project involved working at the University of Washington's
-					<NuxtLink
-						class="text-primary hover:underline"
-						to="https://ocean.washington.edu"
-						external
-						target="_blank"
-					>
-						School of Oceanography
-					</NuxtLink>
-					as a research assistant, building an interactive web application for the visualization of
-					paleoclimate data reconstructions. You can check it out at
-					<NuxtLink
-						class="text-primary hover:underline"
-						to="https://pv.jortuck.com"
-						external
-						target="_blank"
-					>
-						https://pv.jortuck.com</NuxtLink
-					>. Currently, I am serving as a Teaching Assistant for
-					<NuxtLink
-						target="_blank"
-						class="text-primary hover:underline"
-						to="https://www.washington.edu/students/crscat/info.html#info201"
-						>INFO 201: Foundational Skills for Data Science</NuxtLink
-					>, helping students begin their data science journeys.
+					development, server-side applications, and data science applications.
 				</ProseP>
 			</div>
 			<div class="space-y-8">
