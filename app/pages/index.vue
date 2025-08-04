@@ -146,7 +146,7 @@ async function handleSubmit() {
 			<div class="space-y-8">
 				<ProseH2>About</ProseH2>
 				<ProseP>
-					My name is Jordan, I'm a student purusing a double degree in
+					My name is Jordan, I'm a student pursuing a double degree in
 					<NuxtLink
 						class="text-primary hover:underline"
 						external
@@ -170,12 +170,11 @@ async function handleSubmit() {
 						>University of Washington.
 					</NuxtLink>
 					I have been teaching myself to program since 2019, and have focused my efforts in web
-					development, server-side applications, and data science applications. As of Summer 2025, I
-					have been working as a contractor with Coordinating Council for Refugees, helping them
+					development, server-side applications, and data science applications.
 				</ProseP>
 			</div>
 			<div class="space-y-8">
-				<ProseH2>Projects</ProseH2>
+				<ProseH2 id="projects">Projects</ProseH2>
 				<div class="grid grid-cols-1 gap-3 md:grid-cols-2">
 					<ProjectCard
 						v-for="item in data"

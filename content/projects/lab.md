@@ -21,12 +21,13 @@ was
 originally an old Windows 7 laptop which I installed Ubuntu Server on because my parents no longer needed it, and now it
 has grown into an operation that allows me to host resource intensive game servers and personal projects for free
 (barring
-the costs of electricity, internet, and the occasional upgrade). What was originally a small side project has grown into
-a huge hobby of mine, and while I still love to play with traditional cloud providers like AWS, this is pretty fun too.
+the costs of electricity, internet, and the occasional upgrade).
+
+What was originally a small side project has grown into
+a huge hobby of mine, and while I still love to explore traditional cloud providers like AWS, this is pretty fun too.
 If you personally know me and need something hosted, I would love to chat to see if it's something I can help you with.
 
 For those who are interested, here is a list of the equipment I have and what I run:
-
 - **Main Server**: My main sever (pictured above) sits inside a PC case I used to use. I currently have Proxmox
   installed
   on it which makes it easy to spin up virtual machines when I need them. I use it to run services such as Teamcity,
