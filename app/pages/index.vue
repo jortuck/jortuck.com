@@ -413,12 +413,10 @@ async function handleSubmit() {
 								<span class="error">{{ errors["message"] }}</span>
 							</label>
 						</div>
-						<div
-							class="flex flex-col content-center items-center space-y-3 md:flex-row md:space-x-3 md:space-y-0"
-						>
+						<div class="flex flex-col space-y-3 md:flex-row md:space-x-3 md:space-y-0">
 							<div
-								class="cf-turnstile"
-								data-theme="dark"
+								class="cf-turnstile lg:w-[300px]"
+								data-size="flexible"
 							></div>
 							<span class="error font-bold">{{ errors["cftoken"] }}</span>
 						</div>
