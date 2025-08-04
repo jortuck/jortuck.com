@@ -237,15 +237,16 @@ async function handleSubmit() {
 					>
 						<div class="m-3 space-y-2 text-gray-50">
 							<h4 class="text-lg font-bold md:text-xl">
-								Bachelor of Science - Informatics & Applied Mathematics, Expected June 2027
+								BS - Informatics & Applied Mathematics, Expected June 2027
 							</h4>
 							<ProseUl>
-								<ProseLi>Member of the Husky Marching Band.</ProseLi>
-								<ProseLi>Member of Husky Robotics.</ProseLi>
-								<ProseLi>
-									Deans List Recipient: Autumn 2023, Winter 2024, Spring 2024, Autumn 2024, Winter
-									2025.
-								</ProseLi>
+								<ProseLi
+									>Dean’s List Recipient: 2023 - 2024 School Year, 2024 - 2025 School Year.</ProseLi
+								>
+								<ProseLi
+									>Activities: Husky Marching Band (Trombonist & Social Media Coordinator), Husky
+									Robotics (Webmaster).</ProseLi
+								>
 							</ProseUl>
 						</div>
 					</div>
