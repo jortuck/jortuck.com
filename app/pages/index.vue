@@ -146,7 +146,7 @@ async function handleSubmit() {
 			<div class="space-y-8">
 				<ProseH2>About</ProseH2>
 				<ProseP>
-					My name is Jordan, I'm a student completing a double degree in
+					My name is Jordan, I'm a student purusing a double degree in
 					<NuxtLink
 						class="text-primary hover:underline"
 						external
@@ -170,7 +170,8 @@ async function handleSubmit() {
 						>University of Washington.
 					</NuxtLink>
 					I have been teaching myself to program since 2019, and have focused my efforts in web
-					development, server-side applications, and data science applications.
+					development, server-side applications, and data science applications. As of Summer 2025, I
+					have been working as a contractor with Coordinating Council for Refugees, helping them
 				</ProseP>
 			</div>
 			<div class="space-y-8">
@@ -220,7 +221,6 @@ async function handleSubmit() {
 							</span>
 						</div>
 					</div>
-					<
 				</div>
 				<ProseH2>Education</ProseH2>
 				<div class="flex flex-col md:flex-row">
