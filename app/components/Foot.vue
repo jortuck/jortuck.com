@@ -1,5 +1,5 @@
 <template>
-	<footer class="mt-5 border-t-2 border-t-base-300 bg-base-100 py-8">
+	<footer class="border-t-base-300 bg-base-100 mt-5 border-t-2 py-8">
 		<div
 			class="container mx-auto flex max-w-6xl flex-col content-center items-center justify-between space-y-6 px-3 align-middle lg:flex-row lg:space-y-0 xl:px-0"
 		>
@@ -37,7 +37,7 @@
 				<p class="text-center text-3xl font-extrabold text-white lg:text-right">
 					<span class="text-primary">J</span>T
 				</p>
-				<p class="text-xs text-gray-400">&copy; 2025 Jordan Tucker</p>
+				<p class="text-xs text-gray-400">&copy; 2026 Jordan Tucker</p>
 			</div>
 		</div>
 	</footer>

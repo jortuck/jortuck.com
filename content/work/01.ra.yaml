@@ -5,7 +5,7 @@ bullets:
 - Develop a REST API using Python and Fast API to support efficient querying of large data sets while maintaining low bandwidth usage when transporting data.
 - Configured, deployed, and optimized AWS Lambda functions for serverless architecture, ensuring seamless scalability and cost-efficiency in a cloud-based environment for the backend API.
 - Implemented automatic deployments of the front end to Cloudflare pages to ensure high availability.
-date: June 2024 - August 2024, June 2025 - Present
+date: June 2024 - August 2024, June 2025 - August 2025
 location: Seattle, WA
 company: University of Washington School of Oceanography
 links:
