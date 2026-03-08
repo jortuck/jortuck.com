@@ -10,23 +10,21 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "@nuxt/content": "^3.6.3",
-    "@tailwindcss/vite": "^4.1.4",
-    "@types/nodemailer": "^6.4.17",
-    "@vueuse/core": "^12.8.2",
-    "@vueuse/nuxt": "^12.8.2",
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "@nuxt/content": "^3.12.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "@vueuse/core": "^14.2.1",
+    "@vueuse/nuxt": "^14.2.1",
     "aws4fetch": "^1.0.20",
-    "better-sqlite3": "^12.2.0",
-    "nodemailer": "^6.10.1",
-    "nuxt": "^4.0.2",
-    "prettier-plugin-tailwindcss": "^0.6.11",
+    "better-sqlite3": "^12.6.2",
+    "nuxt": "^4.3.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "vue": "latest",
-    "zod": "^3.24.3"
+    "zod": "^3.25.67"
   },
   "devDependencies": {
-    "prettier": "3.4.2",
-    "tailwindcss": "^4.1.4"
+    "prettier": "3.8.1",
+    "tailwindcss": "^4.2.1"
   },
   "packageManager": "pnpm@10.6.1+sha512.40ee09af407fa9fbb5fbfb8e1cb40fbb74c0af0c3e10e9224d7b53c7658528615b2c92450e74cfad91e3a2dcafe3ce4050d80bda71d757756d2ce2b66213e9a3",
   "pnpm": {
