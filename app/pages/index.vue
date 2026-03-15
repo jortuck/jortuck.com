@@ -8,9 +8,9 @@ useSeoMeta({
 	title: "Home | Jordan Tucker",
 	ogTitle: "Home | Jordan Tucker",
 	description:
-		"Hello, my name is Jordan. I'm a student completing a double degree in Informatics and Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
+		"Hello, my name is Jordan. I'm a student pursuing a Bachelor of Science in Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
 	ogDescription:
-		"Hello , my name is Jordan. I'm a student completing a double degree in Informatics and Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
+		"Hello , my name is Jordan. I'm a student pursuing a Bachelor of Science in Applied Mathematics at the University of Washington. I enjoy creating websites, Discord bots, & more!",
 	ogUrl: "https://jortuck.com"
 });
 let { data } = await useAsyncData("featuredProjects", () => queryCollection("projects").all());
@@ -146,15 +146,7 @@ async function handleSubmit() {
 			<div class="space-y-8">
 				<ProseH2>About</ProseH2>
 				<ProseP>
-					My name is Jordan, I'm a student pursuing a double degree in
-					<NuxtLink
-						class="text-primary hover:underline"
-						external
-						target="_blank"
-						to="https://ischool.uw.edu/programs/informatics"
-						>Informatics</NuxtLink
-					>
-					and
+					My name is Jordan, I'm a student pursuing a Bachelor of Science in
 					<NuxtLink
 						class="text-primary hover:underline"
 						external
@@ -227,7 +219,7 @@ async function handleSubmit() {
 						class="from-husky to-husky2 flex items-center justify-center rounded-t-md bg-gradient-to-br py-10 align-middle md:w-2/3 md:rounded-l-md md:rounded-tr-none"
 					>
 						<img
-							class="block w-fit px-12 py-6"
+							class="block w-fit md:max-h-48 px-12 py-6"
 							alt="University of Washington."
 							src="~/assets/images/uwlogo.png"
 						/>
@@ -237,11 +229,11 @@ async function handleSubmit() {
 					>
 						<div class="m-3 space-y-2 text-gray-50">
 							<h4 class="text-lg font-bold md:text-xl">
-								BS - Informatics & Applied Mathematics, Expected June 2027
+								Bachelor of Science - Applied Mathematics, Expected June 2027
 							</h4>
 							<ProseUl>
 								<ProseLi
-									>Dean’s List Recipient: 2023 - 2024 School Year, 2024 - 2025 School Year.</ProseLi
+									>Minor in Informatics.</ProseLi
 								>
 								<ProseLi
 									>Activities: Husky Marching Band (Trombonist & Social Media Coordinator), Husky
