@@ -15,8 +15,8 @@ image:
 TypeScript"}
 :CenteredImage{src="/thumbnails/robotics.png"}
 ::TagButtonGroup
-:TagButton{url="https://github.com/jortuck/RoboticsWebsite" text="Source Code" icon="fa-brands fa-github"}
-:TagButton{url="https://huskyrobotics.me" text="Live Website" icon="fa-solid fa-globe"}
+:TagButton{url="https://github.com/huskyroboticsteam/RoboticsWebsite" text="Source Code" icon="fa-brands fa-github"}
+:TagButton{url="https://uwrobots.org" text="Live Website" icon="fa-solid fa-globe"}
 ::
 ::
 
@@ -31,5 +31,5 @@ I collaborated with the club’s operations lead to turn a NASA-inspired Figma m
 The new site, hosted on Cloudflare pages, is fully responsive, performs significantly faster than the previous site, contains more up-to-date content, and provides a fully 
 functional contact form.
 
-As of 2025, I’m still serving as the webmaster for Husky Robotics.
+As of 2026, I’m still serving as the webmaster for Husky Robotics.
 
