@@ -1,5 +1,5 @@
 ---
-title: 'bothell.band'
+title: 'bothell-band'
 description: 'A website created as a central hub to streamline and organize fundraising events for my high school jazz band.'
 github: 'bothell.band'
 image:
