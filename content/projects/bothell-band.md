@@ -15,11 +15,17 @@ image:
 :CenteredImage{src="/thumbnails/bothell.band.png"}
 ::TagButtonGroup
 :TagButton{url="https://github.com/jortuck/bothell.band" text="Source Code" icon="fa-brands fa-github"}
-:TagButton{url="https://bothell.band" text="Live Website" icon="fa-solid fa-globe"}
 ::
 ::
 
 ## About
+
+::alert
+As of 4/13/26, I no longer have the bandwidth to give this website the support it deserves. Please visit
+[bothellmusicboosters.org](https://bothellmusicboosters.org) if you would like to support the program.
+::
+
+
 
 This website was created as a small side project to help assist the fundraising efforts for my high school jazz band at
 the time. During my senior year of high school, our jazz band was selected as a finalist for the [Essentially Ellington
