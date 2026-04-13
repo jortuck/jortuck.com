@@ -26,8 +26,8 @@ fa-newspaper"}
 ## About
 
 This is the project I developed while working as an Undergraduate Research assistant for the University of Washington's
-School of Oceanography during the Summer of 2024. The goal was to create a web application for visualizing paleocliamte
-data reconstructions. I worked closely with my advisor, Gemma O'Connor, to create an app capable of telling the full,
+School of Oceanography during the Summer of 2024 and Summer of 2025. The goal was to create a web application for 
+visualizing paleocliamte  data reconstructions. I worked closely with my advisor, Gemma O'Connor, to create an app capable of telling the full,
 accurate story of the data. I decided to use Svelte for the front end because of its reputation of high performance, and
 the Python library FastAPI for the data API because of the vast data science tools that already exists in the Python
 ecosystem. This combination allowed for a fast user experience while delivering full visualizations. The app uses the
